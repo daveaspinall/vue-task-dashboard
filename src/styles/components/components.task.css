@@ -1,0 +1,163 @@
+/* ==========================================================================
+   Task
+   ========================================================================== */
+
+.c-task {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    line-height: 24px;
+    padding: 1.25em 0 1.25em 1.429em;
+    color: inherit;
+    overflow: hidden;
+    @media ($mq-sm-min) {
+        padding: 1.25em 0 1.25em .563em;
+    }
+    &:last-child {
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+    }
+    &:hover {
+        background: $colour-grey-x-light;
+    }
+}
+
+/* New task link */
+
+.c-task--new {
+    padding: 1em 1.429em 1em .563em;
+    color: $colour-alpha;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    @media ($mq-sm-min) {
+        padding: 1em .563em;
+    }
+}
+/* Icon */
+
+.c-task--new__icon {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    @media ($mq-sm-min) {
+        margin-right: .625em;
+    }
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        fill: $colour-alpha;
+        transition: fill $transition;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/*
+   Type
+   ========================================================================== */
+
+.c-task__type {
+    position: relative;
+    margin-right: .625em;
+    width: 38px;
+    height: 38px;
+    @media ($mq-xs-max) {
+        display: none;
+    }
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        fill: $colour-grey;
+        transition: fill $transition;
+        transform: translate(-50%, -50%);
+        .c-task:hover & {
+            fill: $colour-alpha;
+        }
+    }
+}
+
+/*
+   Details
+   ========================================================================== */
+
+.c-task__details {
+    margin-right: 1.875em;
+    color: $colour-grey;
+}
+.c-task__details__title {
+    display: block;
+    font-weight: $font-regular;
+    color: $colour-black;
+    transition: color $transition;
+    @media ($mq-xs-max) {
+        line-height: 1.3;
+    }
+    .c-task:hover & {
+        color: $colour-alpha;
+    }
+}
+.c-task__details__client {
+    display: block;
+    font-size: responsive 12px 14px;
+    @media ($mq-sm-min) {
+        line-height: 1.429;
+    }
+}
+
+/*
+   Meta
+   ========================================================================== */
+
+.c-task__meta {
+    margin-left: auto;
+    text-align: right;
+    color: $colour-grey;
+}
+.c-task__meta__due-date {
+    display: block;
+    white-space: nowrap;
+    @media ($mq-xs-max) {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+}
+.c-task__meta__due-date--critical {
+    color: $colour-charlie;
+}
+.c-task__meta__due-date--snoozed {
+    color: $colour-delta;
+}
+.c-task__meta__due-date--done {
+    color: $colour-bravo;
+}
+.c-task__meta__budget {
+    display: block;
+    font-size: responsive 12px 14px;
+    line-height: 1.429;
+}
+
+/*
+   Options
+   ========================================================================== */
+
+.c-task__options {
+    position: relative;
+    margin: 0 .5em 0 2px;
+    width: 38px;
+    height: 38px;
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        fill: $colour-grey;
+        transition: fill $transition;
+        transform: translate(-50%, -50%);
+        .c-task__options:hover & {
+            fill: $colour-alpha;
+        }
+    }
+}

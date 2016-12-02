@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Theme colours
+   ========================================================================== */
+
+$colour-snoozed: $colour-delta;
+$colour-done: $colour-bravo;
+
+/*
+   Nav links
+   ========================================================================== */
+
+.u-theme--snoozed {
+    &.c-navbar__nav__list__item__link:hover,
+    &.c-navbar__nav__list__item__link--active {
+        box-shadow: inset 0 -3px 0 0 $colour-snoozed;
+        .c-icon-link__icon svg {
+            fill: $colour-snoozed;
+        }
+    }
+    &.c-task-details__header__snooze:hover {
+        .c-icon-link__icon svg {
+            fill: $colour-snoozed;
+        }
+    }
+}
+
+.u-theme--done {
+    &.c-navbar__nav__list__item__link:hover,
+    &.c-navbar__nav__list__item__link--active {
+        box-shadow: inset 0 -3px 0 0 $colour-done;
+        .c-icon-link__icon svg {
+            fill: $colour-done;
+        }
+    }
+}

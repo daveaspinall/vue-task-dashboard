@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: $font-body;
+    font-weight: $font-regular;
+    font-size: responsive $font-size-min $font-size-max;
+    line-height: 1.75;
+    color: $colour-black;
+    background: $colour-grey-x-light;
+}

@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+    color: $colour-alpha;
+    text-decoration: none;
+    transition: all $transition;
+    &:hover {
+        color: color($colour-alpha shade(15%));
+    }
+}

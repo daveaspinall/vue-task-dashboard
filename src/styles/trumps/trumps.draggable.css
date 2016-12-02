@@ -1,0 +1,8 @@
+/* ==========================================================================
+   Draggable elements
+   ========================================================================== */
+
+.c-draggable__wrapper--active {
+    cursor: grab !important;
+    backface-visibility: hidden !important;
+}

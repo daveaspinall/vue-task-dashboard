@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Draggable elements
+   ========================================================================== */
+
+.c-draggable {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid $colour-grey-light;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .20);
+    &:before,
+    &:after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 50%;
+        width: 24px;
+        height: 24px;
+        transform: translateY(-50%);
+    }
+    &:before {
+        left: 20px;
+        background: inline("../assets/icons/ic_check--white.svg") no-repeat;
+    }
+    &:after {
+        right: 20px;
+        background: inline("../assets/icons/ic_schedule--white.svg") no-repeat;
+    }
+}
+
+/* States */
+
+.c-draggable--complete {
+    background: $colour-bravo;
+    &:before {
+      display: block;
+    }
+}
+.c-draggable--snooze {
+    background: $colour-delta;
+    &:after {
+      display: block;
+    }
+}
+
+/*
+   Wrapper
+   ========================================================================== */
+
+.c-draggable__wrapper {
+    position: relative;
+    z-index: 10;
+    background: $colour-white;
+    backface-visibility: hidden;
+}
+.c-draggable__wrapper--active .c-task {
+    pointer-events: none;
+}

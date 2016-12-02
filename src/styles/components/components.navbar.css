@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.c-navbar {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: $colour-white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .12), 0px 1px 2px 0px rgba(0, 0, 0, .24);
+    transition: padding $transition;
+    @media ($mq-sm-min) {
+        padding: 0 50px;
+    }
+}
+
+/* ==========================================================================
+   Actions
+   ========================================================================== */
+
+/* Menu */
+
+.c-navbar__actions__menu {
+    margin-right: .25em;
+}
+
+/* Search */
+
+@media ($mq-xs-max) {
+    .c-navbar__actions__search {
+        display: none;
+    }
+}
+
+/*
+   Nav
+   ========================================================================== */
+
+.c-navbar__nav__list {
+    display: flex;
+    flex-flow: row-nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@media ($mq-sm-min) {
+    .c-navbar__nav__list__item {
+        margin: 0 .625em;
+    }
+}
+.c-navbar__nav__list__item__link {
+    display: block;
+    padding: 1em;
+    transition: all $transition;
+}
+.c-navbar__nav__list__item__link:hover,
+.c-navbar__nav__list__item__link--active {
+    box-shadow: inset 0 -3px 0 0 $colour-alpha;
+    .c-icon-link__icon svg {
+        fill: $colour-alpha;
+    }
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/* Profile */
+
+.c-navbar__utils__profile {
+    margin-left: .25em;
+    @media ($mq-xs-max) {
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Icon link
+   ========================================================================== */
+
+.c-icon-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: .625em;
+}
+.c-icon-link__label {
+    @mixin hide-content;
+}
+.c-icon-link__icon {
+    width: 24px;
+    height: 24px;
+    svg {
+        display: block;
+        fill: $colour-grey;
+        transition: fill $transition;
+        .c-icon-link:hover & {
+            fill: $colour-alpha;
+        }
+    }
+}
+.c-icon-link__icon--active {
+    svg {
+        fill: $colour-alpha;
+    }
+}

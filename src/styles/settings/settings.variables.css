@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+/* Font sizes */
+
+$font-size-min    : 14px;
+$font-size-max    : 16px;
+
+$base-line-height : 28px;
+
+/* Font families */
+
+$font-alpha       : "Brandon Grotesque", sans-serif;
+$font-bravo       : "Brandon Text", sans-serif;
+
+$font-header      : $font-alpha;
+$font-body        : $font-bravo;
+
+/* Font weights */
+
+$font-regular     : 400;
+$font-bold        : 600;
+
+/* Quotes */
+
+$open-quote       : "\201C";
+$close-quote      : "\201D";
+
+
+/* ==========================================================================
+   Colours
+   ========================================================================== */
+
+/*
+ * Colour naming convention
+ *
+ * colour-grey-x-light
+ * colour-grey-light
+ * colour-grey-mid-light
+ * colour-grey
+ * colour-grey-mid-dark
+ * colour-grey-dark
+ * colour-grey-x-dark
+ */
+
+$colour-white            : #FFFFFF;
+$colour-grey-x-light     : #F9F9F9;
+$colour-grey-light       : #E6E6E6;
+$colour-grey             : #84939A;
+$colour-black            : #1C2022;
+
+$colour-alpha            : #00AEEF;
+$colour-bravo            : #62D963;
+$colour-charlie          : #EF540C;
+$colour-delta            : #FFD321;
+$colour-echo             : #D8A674;
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+/*
+ * Breakpoint naming convention
+ *
+ * screen-xs
+ * screen-sm
+ * screen-md
+ * screen-lg
+ * screen-xl
+ *
+ * Then append with `-min` or `-max` depending on the query
+ */
+
+/* Min-width */
+
+$screen-xs-min  : 480px;
+$screen-sm-min  : 660px;
+$screen-md-min  : 768px;
+$screen-lg-min  : 960px;
+$screen-xl-min  : 1024px;
+$screen-xxl-min : 1367px;
+
+/* Max-width */
+
+$screen-xxs-max : 479px;
+$screen-xs-max  : 659px;
+$screen-sm-max  : 767px;
+$screen-md-max  : 959px;
+$screen-lg-max  : 1023px;
+$screen-xl-max  : 1366px;
+
+/* Queries */
+
+$mq-xs-min      : (min-width: $screen-xs-min);
+$mq-sm-min      : (min-width: $screen-sm-min);
+$mq-md-min      : (min-width: $screen-md-min);
+$mq-lg-min      : (min-width: $screen-lg-min);
+$mq-xl-min      : (min-width: $screen-xl-min);
+$mq-xxl-min     : (min-width: $screen-xxl-min);
+
+$mq-xxs-max     : (max-width: $screen-xxs-max);
+$mq-xs-max      : (max-width: $screen-xs-max);
+$mq-sm-max      : (max-width: $screen-sm-max);
+$mq-md-max      : (max-width: $screen-md-max);
+$mq-lg-max      : (max-width: $screen-lg-max);
+$mq-xl-max      : (max-width: $screen-xl-max);
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* Border Radius */
+
+$border-radius: 3px;
+
+/* Transitions */
+
+$transition-duration : .2s;
+$transition-easing   : cubic-bezier(.4, 0, .2, 1);
+
+$transition: $transition-duration $transition-easing;

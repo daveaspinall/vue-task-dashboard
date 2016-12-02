@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-header;
+    font-weight: $font-regular;
+    margin-top: 0;
+    margin-bottom: $base-line-height;
+}
+
+h1 {
+    font-size: responsive 26px 32px;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: responsive 24px 29px;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: responsive 22px 26px;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: responsive 20px 23px;
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: responsive 18px 20px;
+    line-height: 1.4;
+}
+
+h6 {
+    font-size: responsive 16px 18px;
+    line-height: 1.4;
+}

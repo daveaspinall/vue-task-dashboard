@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+/*
+   Clearfix
+   ========================================================================== */
+
+@define-mixin clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+/*
+   Pretty underlines 😍
+   ========================================================================== */
+
+/* Read more at: https://eager.io/blog/smarter-link-underlines */
+
+/* stylelint-disable */
+@define-mixin pretty-underline {
+    background:
+        linear-gradient($colour-white, $colour-white) 0 1.08em/.05em 1px no-repeat,
+        linear-gradient($colour-white, $colour-white) 0 1.08em/.05em 1px no-repeat,
+        linear-gradient(currentColor, currentColor) 0 1.08em/1px 1px repeat-x;
+    text-shadow:
+        .03em 0 $colour-white, -.03em 0 $colour-white,
+        .06em 0 $colour-white, -.06em 0 $colour-white,
+        .09em 0 $colour-white, -.09em 0 $colour-white,
+        .12em 0 $colour-white, -.12em 0 $colour-white,
+        .15em 0 $colour-white, -.15em 0 $colour-white;
+    &:hover {
+        background: transparent;
+    }
+}
+/* stylelint-enable */
+
+/*
+   FOUT fix
+   ========================================================================== */
+
+@define-mixin fout-fix {
+    .wf-loading & {
+        visibility: hidden;
+    }
+}
+
+/*
+   Hide content
+   ========================================================================== */
+
+@define-mixin hide-content {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*
+   Font smoothing
+   ========================================================================== */
+
+@define-mixin font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
