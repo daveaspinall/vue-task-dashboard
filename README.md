@@ -1,6 +1,6 @@
-# task-dashboard-vue
+# Vue Task Dashboard
 
-> Personal (daily) task dashboard for Code Interview
+Personal (daily) task dashboard built using the vuejs-webpack template
 
 ## Build Setup
 
