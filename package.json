@@ -1,7 +1,7 @@
 {
-  "name": "task-dashboard-vue",
+  "name": "vue-task-dashboard",
   "version": "1.0.0",
-  "description": "Personal (daily) task dashboard for Code Interview",
+  "description": "Personal (daily) task dashboard built using the vuejs-webpack template",
   "author": "Dave Aspinall",
   "private": true,
   "scripts": {
